@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/org.scala-lang.scala-reflect-2.11.7.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/org.scala-lang.modules.scala-xml_2.11-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/org.scala-lang.modules.scala-parser-combinators_2.11-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/xpp3.xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/xmlpull.xmlpull-1.1.3.1.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/org.swinglabs.swingx-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/org.swinglabs.swing-worker-1.1.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/org.slf4j.slf4j-simple-1.7.21.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/org.slf4j.slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/org.scala-lang.scala-library-2.11.8.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/org.scala-lang.scala-compiler-2.11.7.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.thoughtworks.xstream.xstream-1.4.8.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.jhlabs.filters-2.0.235.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-shell-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-scala-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-plot-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-nlp-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-math-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-interpolation-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-graph-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-demo-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-data-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-core-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/smile-1.2.0/lib/com.github.haifengl.smile-benchmark-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/spark-1.6.2-bin-hadoop2.6/lib/spark-1.6.2-yarn-shuffle.jar"/>
+	<classpathentry kind="lib" path="/home/user14/spark-1.6.2-bin-hadoop2.6/lib/spark-examples-1.6.2-hadoop2.6.0.jar"/>
+	<classpathentry kind="lib" path="/home/user14/spark-1.6.2-bin-hadoop2.6/lib/datanucleus-rdbms-3.2.9.jar"/>
+	<classpathentry kind="lib" path="/home/user14/spark-1.6.2-bin-hadoop2.6/lib/datanucleus-api-jdo-3.2.6.jar"/>
+	<classpathentry kind="lib" path="/home/user14/spark-1.6.2-bin-hadoop2.6/lib/datanucleus-core-3.2.10.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
