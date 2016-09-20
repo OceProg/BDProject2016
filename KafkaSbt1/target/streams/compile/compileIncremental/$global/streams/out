@@ -1,0 +1,31 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/home/user14/Documents/KafkaSbt1/src/main/scala/TestKafkaConsumer.scala)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set(/home/user14/Documents/KafkaSbt1/target/scala-2.11/classes/fr/univalence/kafkatraining/testapi/TestKafkaConsumer$$anonfun$1.class, /home/user14/Documents/KafkaSbt1/target/scala-2.11/classes/fr/univalence/kafkatraining/testapi/TestKafkaConsumer$.class, /home/user14/Documents/KafkaSbt1/target/scala-2.11/classes/fr/univalence/kafkatraining/testapi/TestKafkaConsumer.class, /home/user14/Documents/KafkaSbt1/target/scala-2.11/classes/fr/univalence/kafkatraining/testapi/TestKafkaConsumer$$anonfun$main$1.class)[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/user14/Documents/KafkaSbt1/src/main/scala/TestKafkaConsumer.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set(/home/user14/Documents/KafkaSbt1/src/main/scala/TestKafkaConsumer.scala)[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/user14/Documents/KafkaSbt1/src/main/scala/TestKafkaConsumer.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/user14/Documents/KafkaSbt1/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3d6f18ef, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/user14/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/user14/Documents/KafkaSbt1/target/scala-2.11/classes:/home/user14/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.10.0.1.jar:/home/user14/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/user14/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/user14/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 4.863472916 s[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
