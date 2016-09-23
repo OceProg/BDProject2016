@@ -16,8 +16,8 @@ object sparkCassandraConnectorExample {
   def main(args: Array[String]): Unit = {
     //sc.stop
     val jarpath = Array("~/spark-cassandra-connector-assembly-1.6.0.jar")
-    val conf = new SparkConf(true).setAppName("scc").set("spark.cassandra.connection.host", "10.1.254.51,10.1.254.62,10.1.254.116")
-    //val conf = new SparkConf(true).setAppName("scc").setMaster("local[2]").set("spark.cassandra.connection.host", "10.1.254.51,10.1.254.62,10.1.254.116")
+    //val conf = new SparkConf(true).setAppName("scc").set("spark.cassandra.connection.host", "10.1.254.51,10.1.254.62,10.1.254.116")
+    val conf = new SparkConf(true).setAppName("scc").setMaster("local[2]").set("spark.cassandra.connection.host", "10.1.254.51,10.1.254.62,10.1.254.116")
     //val conf = new SparkConf(true).setAppName("scc").setMaster("local[2]").set("spark.cassandra.connection.host", "10.1.254.51")
     //val conf = new SparkConf(true).setAppName("scc").setMaster("spark://10.1.254.62:7077").set("spark.cassandra.connection.host", "10.1.254.51,10.1.254.62,10.1.254.116")
     val sc = new SparkContext(conf.setJars(jarpath))
@@ -45,6 +45,7 @@ object sparkCassandraConnectorExample {
 
     // print out the data saved from Spark to Cassandra
     sc.cassandraTable("demo", "wordcount").collect.foreach(println)
+
     sc.stop()
 
   }
