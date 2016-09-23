@@ -1,1 +1,8 @@
 */bin/*
+*/.idea/*
+*/out/*
+*/.metadata/*
+*/target/*
+*/config-classes/*
+SFsbt/project/target
+SFsbt/project/project

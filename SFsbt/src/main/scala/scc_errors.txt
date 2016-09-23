@@ -1,0 +1,1 @@
+WARN TaskSetManager: Lost task 0.2 in stage 0.0 (TID 2, 10.1.254.51): java.io.InvalidClassException: com.datastax.spark.connector.rdd.CassandraTableScanRDD; local class incompatible: stream classdesc serialVersionUID = 6501644681185178565, local class serialVersionUID = 5341884440951470345

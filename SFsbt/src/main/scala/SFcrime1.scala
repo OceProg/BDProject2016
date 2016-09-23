@@ -1,41 +1,9 @@
-import java.util.zip.GZIPInputStream
-import scala.io.Source
-import scala.math._
-import java.io._
-import smile._
-import smile.data._
-import smile.classification._
-import javax.swing.JFrame
-import javax.swing.JPanel
-import smile.plot.BarPlot
-import smile.plot.Palette
-import scala.io.Source
-import smile.plot.ScatterPlot
-import smile.regression.ols
-import java.awt.Color
-import java.awt.GridLayout
-import javax.swing.JFrame
-import javax.swing.JPanel
-import smile.plot.Line
-import smile.plot.LinePlot
-import smile.plot.PlotCanvas
-import smile.validation.RMSE
-import java.awt.Dimension
-import java.awt.Robot
-import java.awt.Graphics
-import java.awt.Graphics2D
-import java.awt.image.BufferedImage
-import java.io.File
-import javax.imageio.ImageIO
-import smile.math.distance.Distance
-import smile.math.kernel.PolynomialKernel
-import smile.math.kernel.GaussianKernel
-import smile.math.kernel.LinearKernel
-import java.awt.Canvas
-import smile.sort.QuickSelect
-import java.util.ListIterator
+package main
 
-import org.apache.spark._
+import java.io._
+import java.util.zip.GZIPInputStream
+
+import org.apache.spark.{SparkConf, SparkContext}
 
 object SFcrime1 {
 
