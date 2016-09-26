@@ -32,8 +32,8 @@ object sparkCassandraConnectorExample {
     println("******2")
 
     CassandraConnector(conf).withSessionDo { session =>
-      session.execute(s"CREATE KEYSPACE IF NOT EXISTS demo WITH REPLICATION = {'class': 'SimpleStrategy', 'replication_factor': 3 }")
-      session.execute(s"CREATE TABLE IF NOT EXISTS demo.wordcount (word TEXT PRIMARY KEY, count COUNTER)")
+      session.execute(s"CREATE KEYSPACE IF NOT EXISTS demo2 WITH REPLICATION = {'class': 'SimpleStrategy', 'replication_factor': 3 }")
+      session.execute(s"CREATE TABLE IF NOT EXISTS demo.wordcount2 (word TEXT PRIMARY KEY, count COUNTER)")
       session.execute(s"TRUNCATE demo.wordcount")
     }
 
@@ -41,7 +41,7 @@ object sparkCassandraConnectorExample {
       .flatMap(_.split("\\s+"))
       .map(word => (word.toLowerCase, 1))
       .reduceByKey(_ + _)
-      .saveToCassandra("demo", "wordcount")
+      .saveToCassandra("demo2", "wordcount2")
 
     // print out the data saved from Spark to Cassandra
     sc.cassandraTable("demo", "wordcount").collect.foreach(println)
