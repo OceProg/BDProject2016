@@ -1,0 +1,44 @@
+CREATE KEYSPACE sf27
+  WITH REPLICATION = { 'class': 'SimpleStrategy', 'replication_factor': 3 };
+
+USE sf27;
+
+CREATE TABLE sfpd_total_10 (
+  IncidntNum FLOAT PRIMARY KEY, Category TEXT, Descript TEXT, DayOfWeek TEXT, Date TEXT, Time TEXT, PdDistrict TEXT, Resolution TEXT, Address TEXT, X TEXT, Y TEXT, Location TEXT, PdId TEXT, ZipCode TEXT, X1 INT, American_Indian_population FLOAT, Asian_population FLOAT, Average_Adjusted_Gross_Income_AGI_in_2012 FLOAT, Average_household_size FLOAT, Black_population FLOAT, Estimated_zip_code_population_in_2013 FLOAT, Females FLOAT, Hispanic_or_Latino_population FLOAT, Houses_and_condos FLOAT, Land_area FLOAT, Males FLOAT, Mar_2016_cost_of_living_index_in_zip_code FLOAT, Median_resident_age FLOAT, Native_Hawaiian_and_Other_Pacific_Islander_population FLOAT, Population_density_people_per_square_mile FLOAT, Renter_occupied_apartments FLOAT, Residents_with_income_below_50_of_the_poverty_level_in_2013 FLOAT, Salary_wage FLOAT, Some_other_race_population FLOAT, Two_or_more_races_population FLOAT, Water_area FLOAT, White_population FLOAT, Zip_code_population_in_2000 FLOAT, Zip_code_population_in_2010 FLOAT
+);
+
+COPY sfpd_total_10 (IncidntNum, Category, Descript, DayOfWeek, Date, Time, PdDistrict, Resolution, Address, X, Y, Location, PdId, ZipCode, X1, American_Indian_population, Asian_population, Average_Adjusted_Gross_Income_AGI_in_2012, Average_household_size, Black_population, Estimated_zip_code_population_in_2013, Females, Hispanic_or_Latino_population, Houses_and_condos, Land_area, Males, Mar_2016_cost_of_living_index_in_zip_code, Median_resident_age, Native_Hawaiian_and_Other_Pacific_Islander_population, Population_density_people_per_square_mile, Renter_occupied_apartments, Residents_with_income_below_50_of_the_poverty_level_in_2013, Salary_wage, Some_other_race_population, Two_or_more_races_population, Water_area, White_population, Zip_code_population_in_2000, Zip_code_population_in_2010)
+    FROM '~/Documents/projet/data/sfpd_total_10.csv';
+
+
+
+# all text:
+CREATE TABLE sfpd_total_10 (
+  IncidntNum TEXT PRIMARY KEY, Category TEXT, Descript TEXT, DayOfWeek TEXT, Date TEXT, Time TEXT, PdDistrict TEXT, Resolution TEXT, Address TEXT, X TEXT, Y TEXT, Location TEXT, PdId TEXT, ZipCode TEXT, X1 TEXT, American_Indian_population TEXT, Asian_population TEXT, Average_Adjusted_Gross_Income_AGI_in_2012 TEXT, Average_household_size TEXT, Black_population TEXT, Estimated_zip_code_population_in_2013 TEXT, Females TEXT, Hispanic_or_Latino_population TEXT, Houses_and_condos TEXT, Land_area TEXT, Males TEXT, Mar_2016_cost_of_living_index_in_zip_code TEXT, Median_resident_age TEXT, Native_Hawaiian_and_Other_Pacific_Islander_population TEXT, Population_density_people_per_square_mile TEXT, Renter_occupied_apartments TEXT, Residents_with_income_below_50_of_the_poverty_level_in_2013 TEXT, Salary_wage TEXT, Some_other_race_population TEXT, Two_or_more_races_population TEXT, Water_area TEXT, White_population TEXT, Zip_code_population_in_2000 TEXT, Zip_code_population_in_2010 TEXT
+);
+
+
+# Test
+CREATE TABLE sfpd_total_10_10 (
+  IncidntNum INT PRIMARY KEY, Category TEXT, Descript TEXT, DayOfWeek TEXT, Date TEXT, Time TEXT, PdDistrict TEXT, Resolution TEXT, Address TEXT, X TEXT, Y TEXT, Location TEXT, PdId TEXT, ZipCode TEXT, X1 INT
+);
+
+COPY sfpd_total_10 (IncidntNum, Category, Descript, DayOfWeek, Date, Time, PdDistrict, Resolution, Address, X, Y, Location, PdId, ZipCode, X1)
+    FROM '~/Documents/projet/data/sfpd_total_10.csv';
+
+IncidntNum,Category,Descript,DayOfWeek,Date,Time,PdDistrict,Resolution,Address,X,Y,Location,PdId,ZipCode,X1
+100475254,ASSAULT,BATTERY,Friday,08/26/2016,08:00,NORTHERN,"ARREST, BOOKED",UNION ST / GOUGH ST,-122.427270640646,37.7981336020854,"(37.7981336020854, -122.427270640646)",10047525404134,94123,0
+
+
+#total
+CREATE KEYSPACE sfpd_2016
+  WITH REPLICATION = { 'class': 'SimpleStrategy', 'replication_factor': 3 };
+
+CREATE TABLE sfpd_total (
+  IncidntNum TEXT PRIMARY KEY, Category TEXT, Descript TEXT, DayOfWeek TEXT, Date TEXT, Time TEXT, PdDistrict TEXT, Resolution TEXT, Address TEXT, X TEXT, Y TEXT, Location TEXT, PdId TEXT, ZipCode TEXT, X1 TEXT, American_Indian_population TEXT, Asian_population TEXT, Average_Adjusted_Gross_Income_AGI_in_2012 TEXT, Average_household_size TEXT, Black_population TEXT, Estimated_zip_code_population_in_2013 TEXT, Females TEXT, Hispanic_or_Latino_population TEXT, Houses_and_condos TEXT, Land_area TEXT, Males TEXT, Mar_2016_cost_of_living_index_in_zip_code TEXT, Median_resident_age TEXT, Native_Hawaiian_and_Other_Pacific_Islander_population TEXT, Population_density_people_per_square_mile TEXT, Renter_occupied_apartments TEXT, Residents_with_income_below_50_of_the_poverty_level_in_2013 TEXT, Salary_wage TEXT, Some_other_race_population TEXT, Two_or_more_races_population TEXT, Water_area TEXT, White_population TEXT, Zip_code_population_in_2000 TEXT, Zip_code_population_in_2010 TEXT
+);
+
+COPY sfpd_total (IncidntNum, Category, Descript, DayOfWeek, Date, Time, PdDistrict, Resolution, Address, X, Y, Location, PdId, ZipCode, X1, American_Indian_population, Asian_population, Average_Adjusted_Gross_Income_AGI_in_2012, Average_household_size, Black_population, Estimated_zip_code_population_in_2013, Females, Hispanic_or_Latino_population, Houses_and_condos, Land_area, Males, Mar_2016_cost_of_living_index_in_zip_code, Median_resident_age, Native_Hawaiian_and_Other_Pacific_Islander_population, Population_density_people_per_square_mile, Renter_occupied_apartments, Residents_with_income_below_50_of_the_poverty_level_in_2013, Salary_wage, Some_other_race_population, Two_or_more_races_population, Water_area, White_population, Zip_code_population_in_2000, Zip_code_population_in_2010)
+    FROM '~/Documents/projet/data/sfpd_total.csv';
+    
+

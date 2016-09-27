@@ -6,3 +6,5 @@
 */config-classes/*
 SFsbt/project/target
 SFsbt/project/project
+*.tar
+*.gz
